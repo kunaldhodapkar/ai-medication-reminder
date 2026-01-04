@@ -1,0 +1,7 @@
+#  MAIN PHRASE ON ACTION INVOCATION
+
+candidates:
+  - first_simple:
+      variants:
+        - speech: >-
+            <speak><prosody rate="moderate" pitch="1.5st">Hi <name>, it's time to take your <time> medications. Did you take them already?<break time="1s"/><audio src="https://sndup.net/7vtv/restaurant%20bell.mp3" soundLevel="-7dB"/></prosody></speak>

@@ -1,0 +1,66 @@
+# Scene: Check if medication is taken for the day. Handle various scenarios.
+# These are prompt snippets (YAML).
+
+# INTENT: YES
+yes:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">That's amazing! Keep the streak going.</prosody></speak>
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">That's awesome. You're doing great!</prosody></speak>
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">Superb! Keep it up.</prosody></speak>
+
+# INTENT: NO
+no:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">No problem! Would like to set an alarm to remind yourself later?</prosody></speak>
+
+# INTENT: MAYBE
+maybe:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">You can check the pillbox to confirm.</prosody></speak>
+
+# INTENT: LEMME_CHECK
+lemme_check:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">Sure, check and tell me.</prosody></speak>
+
+# INTENT: NO_WILL_NOW
+no_will_now:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody pitch="1.5st">That's great! Thank you.</prosody></speak>
+          - speech: >-
+              <speak><prosody pitch="1.5st">Awesome. Thank you so much!</prosody></speak>
+          - speech: >-
+              <speak><prosody pitch="1.5st">Superb! Thanks a lot.</prosody></speak>
+
+# SYSTEM INTENT: NO_MATCH
+no_match:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody pitch="1.5st">Sorry, I didn't get it properly, did you take your medications?</prosody></speak>
+
+# SYSTEM INTENT: NO_INPUT
+no_input:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody pitch="1.5st">Sorry, I'm having trouble understanding. Please say, "Yes", "No", or "I don't remember".</prosody></speak>

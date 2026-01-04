@@ -1,0 +1,19 @@
+# Scene: Set_alarm when want to create an alarm to take medications for a later time.
+
+# INTENT: YES
+yes:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">Sure! Please say, "Set an alarm" to set an alarm for a later time.</prosody></speak>
+  suggestions:
+    - title: Set an alarm
+
+# INTENT: NO
+no:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">Sure, no problem please remember to take your medications later. Have a great rest of your day!</prosody></speak>

@@ -1,0 +1,25 @@
+# Scene: Pillbox_check scene when user does not remember if they have taken the medications. Checks pillbox status and confirms.
+
+# EVENT: enter scene (initial prompt)
+on_enter:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">I can wait for until you check the pillbox.<break time="0.5s"/> Please say, "Hey Google..." when you're ready.<break time="150s"/> So, did you take your medications?</prosody></speak>
+
+# INTENT: YES
+yes:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">That's amazing!<audio src="https://sndup.net/6dds/Audience%20Clapping.mp3" soundLevel="-7.5dB"/> Great job.<break time="1s"/> I will check again at your next medication time. Have a great rest of your day!</prosody></speak>
+
+# INTENT: NO
+no:
+  candidates:
+    - first_simple:
+        variants:
+          - speech: >-
+              <speak><prosody rate="moderate" pitch="1.5st">No problem! Would like to set an alarm to remind yourself later?</prosody></speak>

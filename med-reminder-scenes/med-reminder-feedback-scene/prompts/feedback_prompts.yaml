@@ -1,0 +1,11 @@
+# Scene: Feedback variants for acknowledgement.
+
+candidates:
+  - first_simple:
+      variants:
+        - speech: >-
+            <speak><prosody pitch="1.5st">That's great! Thank you.</prosody></speak>
+        - speech: >-
+            <speak><prosody pitch="1.5st">Awesome. Thank you so much!</prosody></speak>
+        - speech: >-
+            <speak><prosody pitch="1.5st">Superb! Thanks a lot.</prosody></speak>
