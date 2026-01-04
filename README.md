@@ -1,4 +1,4 @@
-# ai-medication-reminder
+# ai-assistant-medication-reminder
 A Google Assistant conversational AI system for medication reminders, implementing scene-based dialog management, intent handling, and fallback strategies optimized for elderly medication adherence workflows. Designed to handle real-world ambiguity, delayed responses, and accessibility needs in voice-first healthcare experiences.
 
 This repository contains the conversational logic and interaction design for a Google Assistant–powered medication reminder application built to support consistent medication adherence, with a primary focus on elderly users and other populations that benefit from clear, reliable, and low-friction voice interactions.
